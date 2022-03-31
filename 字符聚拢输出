@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<Windows.h>
+#include<string.h>
+int main() {
+	char arr1[] = "Welcome to China!";
+	char arr2[]= "******************";
+	int right = strlen(arr2)-1;
+	int left = 0;
+
+	while (left <=right)
+	{
+		arr2[right] = arr1[right];
+		arr2[left] = arr1[left];
+		printf("%s\n", arr2);
+		left++;
+		right--;
+		Sleep(1000);
+		system("cls");
+	}
+
+
+	return 0;
+}
